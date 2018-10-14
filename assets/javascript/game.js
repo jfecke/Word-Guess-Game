@@ -2,7 +2,7 @@ document.onkeyup= function(event) {hangman.keyPress(event)};
 
 var hangman = {
     gameState: 0,
-    words: ["witch", "ghost", "hobgoblin", "skeleton", "costume", "mummy", "scream", "spooky", "werewolf", "vampire"],
+    words: ["witch", "ghost", "hobgoblin", "skeleton", "costume", "mummy", "scream", "spooky", "werewolf", "vampire", "fright", "wraith", "monster", "pumpkin", "treat", "wizard", "spiderweb", "fairy", "pirate", "ninja", "frightful"],
     word: "",
     guesses: [],
     words_played: [],
@@ -10,9 +10,10 @@ var hangman = {
     wins: 0,
     losses: 0,
     alphabet: "abcdefghijklmnopqrstuvwxyz",
+    happyHalloween: new Audio("assets/sounds/happy-halloween.wav"),
     startItem: document.getElementById("start"),
     winScreen: document.getElementById("winScreen"),
-    playAgain: document.getElementById("playAgain"),
+    playAgain: document.getElementById("playAgain"),t
     wordItem: document.getElementById("theWord"),
     guessTracker: document.getElementById("guessedLetters"),
     guessTitle: document.getElementById("guessTitle"),
@@ -50,7 +51,6 @@ var hangman = {
           }
         }  
       this.wordItem.textContent = output; 
-      console.log(output);
     },
     Guess: function(key) {
       this.guesses.push(key);
@@ -74,6 +74,7 @@ var hangman = {
       if (this.wordItem.textContent.indexOf("_") < 0) {
         this.winScreen.textContent = "You Win!";
         this.winScreen.style.visibility = "visible";
+        this.happyHalloween.play();
         this.gameState = 2;
         this.wins += 1;
         this.winTracker.textContent = this.wins;
