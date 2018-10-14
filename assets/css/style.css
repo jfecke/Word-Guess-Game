@@ -1,0 +1,160 @@
+body {
+    background: black;
+}
+
+.container {
+    height:900px;
+    width: 960px;
+    margin: 50px auto;
+    background-image: url(../images/haunted-house.png);
+    background-size: cover;
+}
+
+.title {
+    width: 960px;
+    height: 225px;
+    margin: 5px auto;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    position: relative;
+}
+
+#title {
+    color: red;
+    text-shadow: 4px 4px black;
+    text-align: center;
+    font-size: 110px;
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    margin: 0 auto;
+    font-family: 'Creepster', cursive;
+    padding:0;
+}
+
+.gameZone {
+    width: 99%;
+    height: 640px;
+    margin: 20px auto 0 auto;
+
+}
+
+.leftSide {
+    width: 49%;
+    height: 99%;
+    margin: 0;
+    float: left;
+}
+
+.rightSide {
+    width: 49%;
+    height: 99%;
+    margin: 0;
+    float: right;
+}
+
+#start {
+    width: 60%;
+    font-family: 'Creepster', cursive;
+    color: white;
+    font-size: 48px;
+    margin: 60% auto;
+    text-align: center;
+    display:block;
+}
+
+
+#winScreen {
+    font-family: 'Nosifer', cursive;
+    color: red;
+    width: 90%;
+    font-size: 68px;
+    margin: 15% auto 0 auto;
+    text-align: center;
+    display: none;
+    font-weight: bold;
+    text-shadow: 4px 4px black;
+}
+
+#playAgain{
+    font-family: 'Creepster', cursive;
+    color: white;
+    width: 100%;
+    font-size: 30px;
+    margin: 5% auto 0 auto;
+    text-align: center;
+    display: none;
+}
+
+#theWord {
+    color: white;
+    height: 50px;
+    font-family: 'Creepster', cursive;
+    font-size: 72px;
+    text-align: center;
+    width: 100%;
+    margin: 20% auto 0 auto;
+    letter-spacing: 15px;
+    display: none;
+}
+
+#guessTitle {
+    width: 100%;
+    font-family: 'Creepster', cursive;
+    color: red;
+    font-size: 48px;
+    margin: 10% auto 0 auto;
+    text-align: center;
+    display: none;
+    font-weight: bold;
+}
+
+#guessedLetters {
+    width: 60%;
+    height: 20%;
+    font-family: 'Creepster', cursive;
+    color: white;
+    font-size: 48px;
+    margin: 2% auto 0 auto;
+    text-align: center;
+    display: none;
+    letter-spacing: 20px;
+    word-wrap: break-word;
+}
+
+#score {
+    width: 100%;
+    height: 20%;
+    font-family: 'Creepster', cursive;
+    color: white;
+    font-size: 32px;
+    margin: 5% auto 0 auto;
+    text-align: center;
+    display: block;
+    position: relative ;
+    bottom: 0px; 
+    word-spacing: 10px;
+}
+
+#guessesRemaining{
+    width: 100%;
+    height: 10%;
+    font-family: 'Creepster', cursive;
+    color: white;
+    font-size: 32px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    display: block;
+    position: relative ;
+    word-spacing: 10px;
+}
+
+#hangPic {
+    max-height: 500px;
+    margin:0;
+    position: relative ;
+    bottom: 0px;
+    left: 90px;
+    display: block;
+}

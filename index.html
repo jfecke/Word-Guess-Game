@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Creepster|Nosifer" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 id="title">Hangman</h1>
+        </div>
+        <div class="gameZone">
+            <div class="leftSide">
+                <div id="winScreen">You Win!</div>
+                <div id="playAgain">Press anything to keep playing.</div>
+                <div id="start">Press any key...</div>
+                <div id="theWord"><strong>______</strong></div>
+                <div id="guessTitle">Letters Guessed:</div>
+                <div id="guessedLetters"></div>
+                <div id="score">Score: Win: <span id="win">0</span> Lose: <span id="lose">0</span></div>
+            </div>
+            <div class="rightSide">
+                <div id="guessesRemaining">Remaining Guesses: <span id="guessLeft">10</span></div>
+                <img id="hangPic" src="assets/images/10.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
