@@ -5,7 +5,7 @@ body {
 .container {
     height:900px;
     width: 960px;
-    margin: 20px auto;
+    margin: 0 auto;
     background-image: url(../images/haunted-house.png);
     background-size: cover;
 }
@@ -131,7 +131,7 @@ body {
     font-size: 32px;
     margin: 5% auto 0 auto;
     text-align: center;
-    display: block;
+    display: none;
     position: relative ;
     bottom: 0px; 
     word-spacing: 10px;
@@ -145,7 +145,7 @@ body {
     font-size: 32px;
     margin: 50px auto 0 auto;
     text-align: center;
-    display: block;
+    display: none;
     position: relative ;
     word-spacing: 10px;
 }

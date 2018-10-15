@@ -22,6 +22,7 @@ var hangman = {
     guessesRemaining: document.getElementById("guessesRemaining"),
     guessLeft: document.getElementById("guessLeft"),
     hangmanPic: document.getElementById("hangPic"),
+    score: document.getElementById("score"),
 
     makeWord: function() {
       if (this.words_played.length == this.words.length) {
@@ -109,6 +110,8 @@ var hangman = {
       this.winScreen.style.visibility = "hidden";
       this.playAgain.style.display = "block";
       this.playAgain.style.visibility = "hidden";
+      this.guessesRemaining.style.display = "block";
+      this.score.style.display = "block";
       this.makeWord();
       this.gameState = 1;
     },
