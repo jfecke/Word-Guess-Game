@@ -13,7 +13,7 @@ var hangman = {
     happyHalloween: new Audio("assets/sounds/happy-halloween.wav"),
     startItem: document.getElementById("start"),
     winScreen: document.getElementById("winScreen"),
-    playAgain: document.getElementById("playAgain"),t
+    playAgain: document.getElementById("playAgain"),
     wordItem: document.getElementById("theWord"),
     guessTracker: document.getElementById("guessedLetters"),
     guessTitle: document.getElementById("guessTitle"),
