@@ -68,8 +68,8 @@ body {
 #winScreen {
     font-family: 'Nosifer', cursive;
     color: red;
-    width: 90%;
-    font-size: 68px;
+    width: 100%;
+    font-size: 62px;
     margin: 15% auto 0 auto;
     text-align: center;
     display: none;

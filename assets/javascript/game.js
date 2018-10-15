@@ -113,7 +113,7 @@ var hangman = {
       this.gameState = 1;
     },
     keyPress: function(event) {
-      var key = event.key;
+      var key = event.key.toLowerCase();
       if (this.gameState === 0) {
         this.startGame();
       }
