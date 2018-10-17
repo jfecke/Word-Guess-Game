@@ -75,6 +75,7 @@ var hangman = {
       if (this.wordItem.textContent.indexOf("_") < 0) {
         this.winScreen.textContent = "You Win!";
         this.winScreen.style.visibility = "visible";
+        this.playAgain.style.visibility = "visible";
         this.happyHalloween.play();
         this.gameState = 2;
         this.wins += 1;
@@ -83,12 +84,13 @@ var hangman = {
       else if (this.guesses_left <= 0) {
         this.winScreen.textContent = "You Lose!";
         this.winScreen.style.visibility = "visible";
+        this.playAgain.style.visibility = "visible";
         this.gameState = 2;
         this.losses += 1;
         this.lossTracker.textContent = this.losses;
         this.wordItem.textContent = this.word;
       }
-      this.playAgain.style.visibility = "visible";
+      
     },
     resetAll: function() {
       this.gameState = 1;
