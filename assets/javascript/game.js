@@ -26,7 +26,7 @@ var hangman = {
 
     makeWord: function() {
       if (this.words_played.length == this.words.length) {
-        this.words_played = [this.word];f
+        this.words_played = [this.word];
       }
       if (this.gameState == 0) {
         var choice = Math.floor(Math.random() * this.words.length);
